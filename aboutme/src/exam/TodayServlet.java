@@ -30,7 +30,8 @@ public class TodayServlet extends HttpServlet {
 		request.setCharacterEncoding("utf8"); 
 		response.setCharacterEncoding("utf8"); 
 		PrintWriter out = response.getWriter(); 
-		out.write("<a href='http://127.0.0.1:5500/WebContent/index.html'>메인화면</a><br>"); 
+		out.write("<a href='http://127.0.0.1:5500/WebContent/index.html'>메인화면</a><br>");
+		out.write("<a href='http://127.0.0.1:5500/WebContent/index.html'>메인화면</a><br>");
 
 		String local_time = LocalDateTime.now().format(DateTimeFormatter.ofPattern("현재시간 : yyyy/MM/dd HH:mm", Locale.KOREA));
 		out.write("<html>");
