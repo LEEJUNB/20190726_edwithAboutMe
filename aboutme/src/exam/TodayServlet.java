@@ -19,10 +19,10 @@ public class TodayServlet extends HttpServlet {
 	@Override
 	protected void doGet(HttpServletRequest request, HttpServletResponse response)
 			throws ServletException, IOException {
-		response.setContentType("text/html");
-		request.setCharacterEncoding("utf8");
-		response.setCharacterEncoding("utf8");
-		PrintWriter out = response.getWriter();
+		response.setContentType("text/html"); // response에 setContentType을 넣어줌. 텍스트/html로 응답을 보낸다는 의미
+//		request.setCharacterEncoding("utf8");
+//		response.setCharacterEncoding("utf8");
+		PrintWriter out = response.getWriter(); // PrintWriter객체얻기
 		out.write("<a href='index.html'>메인화면</a><br>");
 
 		String localTime = LocalDateTime.now()
